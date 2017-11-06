@@ -1,0 +1,26 @@
+@mixin bg ($width, $height, $img, $bgc: '', $format: 'png') {
+  width: $width;
+  height: $height;
+  background:#{$bgc} url(../../assets/images/#{$img}.#{$format}) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+
+@mixin bgH ($width, $height, $img, $format: 'png', $bgc: '') {
+  width: $width;
+  height: $height;
+  background:#{$bgc} url(../assets/images/#{$img}.#{$format}) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+
+@mixin bgc ($width, $height, $img, $bgc: '', $format: 'png') {
+  width: $width;
+  height: $height;
+  background:#{$bgc} url(../../assets/images/#{$img}.#{$format}) center center no-repeat;
+  // background-size: 100% 100%;
+}
+
+$font-size: 4vw;
+$blue: #329fff;
+$orange: #ff7b19;
+$red: #f00;
+
